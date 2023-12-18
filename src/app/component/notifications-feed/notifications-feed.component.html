@@ -1,0 +1,10 @@
+<div class="notification-container">
+
+  <div class="notification" *ngIf="notifications | async as notifications">
+    <div class="notification-card"*ngFor="let notification of notifications">
+      <h5>Sie haben einen neuen {{notification.type}} erhalten!</h5>
+      <p>{{notification.formattedDate}}</p>
+      <hr>
+    </div>
+  </div>
+</div>

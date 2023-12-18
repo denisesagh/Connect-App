@@ -1,0 +1,12 @@
+.searchbar {
+  position: relative;
+  width: 100%;
+}
+
+.search-btn {
+  background-color: gray;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}

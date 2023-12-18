@@ -1,0 +1,65 @@
+<div *ngIf="externUser$ | async as user" style="margin-bottom: 20px">
+
+  <div class="profile-info">
+    <div class="profile-image">
+      <img
+        *ngIf="user.photoURL; else defaultImage"
+        [src]="user.photoURL"
+        alt="Profile picture">
+      <ng-template #defaultImage>
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Default profile picture">
+      </ng-template>
+    </div>
+
+    <div class="input-fields">
+
+      <form class="margin-top"[formGroup]="profileForm" >
+
+
+        <div class="row">
+          <div>
+
+            <input id="fullName"
+                   type="text"
+                   matInput
+                   formControlName="fullName"
+                   placeholder="Ganzer Name"
+                    readonly
+                    style="pointer-events: none;"
+            />
+
+          </div>
+
+          <div>
+            <input id="userName"
+                   type="text"
+                   matInput
+                   formControlName="userName"
+                   placeholder="Display Name"
+                   readonly
+                   style="pointer-events: none;"
+            />
+          </div>
+
+          <div>
+            <input id="bio"
+                   type="text"
+                   matInput
+                   formControlName="bio"
+                   placeholder="Bio"
+                    readonly
+                    style="pointer-events: none;"
+            />
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+
+</div>
+
+
+<app-feed [loadMode]="'ExternProfile'"></app-feed>

@@ -1,0 +1,26 @@
+<div class="friendlist-container">
+  <div class="header">
+    <h4>Freunde</h4>
+    <hr>
+  </div>
+  <div class="body" >
+    <div class="friend" *ngFor="let friend of profiles">
+      <img
+        class="img-fluid"
+        *ngIf="friend.photoURL; else defaultImage"
+        [src]="friend.photoURL"
+        alt="Profile picture">
+      <ng-template #defaultImage>
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Default profile picture">
+      </ng-template>
+      <div class="friend-details">
+        <h5 (click)="profilAufrufen(friend.uid)">{{friend.fullName}}</h5>
+        <p (click)="profilAufrufen(friend.uid)">@{{friend.userName}}</p>
+      </div>
+      <button class="unfollow-btn btn btn-sm" (click)="removeFriend(friend.uid)">
+        -
+      </button>
+    </div>
+  </div>
+</div>
+

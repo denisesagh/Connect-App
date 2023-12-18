@@ -1,0 +1,845 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>connect-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">connect-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  CreatePostComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/component/createPost/create-post.component.ts</code>
+</p>
+
+
+
+
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                                <code><a href="../injectables/DbServiceService.html" target="_self" >DbServiceService</a></code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-create-post</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./create-post.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./create-post.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#contentText" >contentText</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedImageFile" >selectedImageFile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#subscribition" >subscribition</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onPhotoSelected" >onPhotoSelected</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onUploadButtonPressed" >onUploadButtonPressed</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(firebaseStorageService: <a href="../injectables/DbServiceService.html" target="_self">DbServiceService</a>, dialog: MatDialog, dashboard: <a href="../components/DashboardComponent.html" target="_self">DashboardComponent</a>, userService: <a href="../injectables/UsersService.html" target="_self">UsersService</a>, toast: HotToastService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/component/createPost/create-post.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>The constructor initializes various services and variables used in the class.
+interact with the Firebase storage service. It is likely used to upload or retrieve files from the Firebase storage.
+provided by Angular Material. It is used to open dialog windows, such as modal dialogs or pop-up dialogs, in your
+application.
+access the methods and properties of the <code>DashboardComponent</code> class within the constructor.
+to interact with user-related data and perform operations such as fetching user information, updating user details,
+etc.
+display toast notifications in the application. Toast notifications are small pop-up messages that provide feedback or
+information to the user.</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>firebaseStorageService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DbServiceService.html" target="_self" >DbServiceService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>This parameter is of type <code>DbServiceService</code> and is used to
+interact with the Firebase storage service. It is likely used to upload or retrieve files from the Firebase storage.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The <code>dialog</code> parameter is an instance of the <code>MatDialog</code> class, which is a service
+provided by Angular Material. It is used to open dialog windows, such as modal dialogs or pop-up dialogs, in your
+application.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>dashboard</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../components/DashboardComponent.html" target="_self" >DashboardComponent</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The <code>dashboard</code> parameter is of type <code>DashboardComponent</code>. It is used to
+access the methods and properties of the <code>DashboardComponent</code> class within the constructor.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersService.html" target="_self" >UsersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The <code>userService</code> parameter is an instance of the <code>UsersService</code> class. It is used
+to interact with user-related data and perform operations such as fetching user information, updating user details,
+etc.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>toast</td>
+                                                  
+                                                        <td>
+                                                                    <code>HotToastService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The <code>toast</code> parameter is an instance of the <code>HotToastService</code> class, which is used to
+display toast notifications in the application. Toast notifications are small pop-up messages that provide feedback or
+information to the user.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onPhotoSelected"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onPhotoSelected</b></span>
+                        <a href="#onPhotoSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onPhotoSelected(photoSelector: HTMLInputElement)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/component/createPost/create-post.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function <code>onPhotoSelected</code> takes in a photo selector input element, reads the selected image file, and sets the
+source of a preview image element to the base64 encoded string of the image.
+input element that allows the user to select a photo file.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>photoSelector</td>
+                                    <td>
+                                            <code>HTMLInputElement</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The photoSelector parameter is of type HTMLInputElement. It represents the
+input element that allows the user to select a photo file.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onUploadButtonPressed"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onUploadButtonPressed</b></span>
+                        <a href="#onUploadButtonPressed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onUploadButtonPressed()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/component/createPost/create-post.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function <code>onUploadButtonPressed</code> creates a new post object with user information and content, uploads the post to
+Firebase storage along with an optional image file, and displays a toast message indicating the upload status.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentText"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>contentText</b></span>
+                        <a href="#contentText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/component/createPost/create-post.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedImageFile"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>selectedImageFile</b></span>
+                        <a href="#selectedImageFile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>File</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/component/createPost/create-post.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subscribition"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>subscribition</b></span>
+                        <a href="#subscribition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/component/createPost/create-post.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+import { DbServiceService } from &#x27;src/app/Services/database/db-service.service&#x27;;
+import {MatDialog} from &quot;@angular/material/dialog&quot;;
+import { Post} from &quot;../../Model/Post&quot;;
+import { v4 as uuid } from &#x27;uuid&#x27;;
+import {DashboardComponent} from &quot;../dashboard/dashboard.component&quot;;
+import {UsersService} from &quot;../../Services/user/user.service&quot;;
+import {Subscription} from &quot;rxjs&quot;;
+import {HotToastService} from &quot;@ngneat/hot-toast&quot;;
+
+@Component({
+  selector: &#x27;app-create-post&#x27;,
+  templateUrl: &#x27;./create-post.component.html&#x27;,
+  styleUrls: [&#x27;./create-post.component.css&#x27;],
+  providers: [DbServiceService]
+})
+export class CreatePostComponent{
+
+  private subscribition: Subscription;
+
+  // @ts-ignore
+  public selectedImageFile: File;
+  public contentText: string;
+
+  /**
+   * The constructor initializes various services and variables used in the class.
+   * @param {DbServiceService} firebaseStorageService - This parameter is of type &#x60;DbServiceService&#x60; and is used to
+   * interact with the Firebase storage service. It is likely used to upload or retrieve files from the Firebase storage.
+   * @param {MatDialog} dialog - The &#x60;dialog&#x60; parameter is an instance of the &#x60;MatDialog&#x60; class, which is a service
+   * provided by Angular Material. It is used to open dialog windows, such as modal dialogs or pop-up dialogs, in your
+   * application.
+   * @param {DashboardComponent} dashboard - The &#x60;dashboard&#x60; parameter is of type &#x60;DashboardComponent&#x60;. It is used to
+   * access the methods and properties of the &#x60;DashboardComponent&#x60; class within the constructor.
+   * @param {UsersService} userService - The &#x60;userService&#x60; parameter is an instance of the &#x60;UsersService&#x60; class. It is used
+   * to interact with user-related data and perform operations such as fetching user information, updating user details,
+   * etc.
+   * @param {HotToastService} toast - The &#x60;toast&#x60; parameter is an instance of the &#x60;HotToastService&#x60; class, which is used to
+   * display toast notifications in the application. Toast notifications are small pop-up messages that provide feedback or
+   * information to the user.
+   */
+  constructor(private firebaseStorageService: DbServiceService, private dialog:MatDialog,
+              private dashboard: DashboardComponent,
+              private userService: UsersService, private toast: HotToastService) {
+    this.contentText &#x3D; &quot;&quot;;
+    this.subscribition &#x3D; new Subscription();
+  }
+
+  /**
+   * The function &#x60;onPhotoSelected&#x60; takes in a photo selector input element, reads the selected image file, and sets the
+   * source of a preview image element to the base64 encoded string of the image.
+   * @param {HTMLInputElement} photoSelector - The photoSelector parameter is of type HTMLInputElement. It represents the
+   * input element that allows the user to select a photo file.
+   */
+  public onPhotoSelected(photoSelector: HTMLInputElement) : void{
+    // @ts-ignore
+    this.selectedImageFile &#x3D; photoSelector.files[0];
+
+    if (this.selectedImageFile !&#x3D; null){
+      let fileReader &#x3D; new FileReader();
+      fileReader.readAsDataURL(this.selectedImageFile);
+      fileReader.addEventListener(&quot;loadend&quot;, ev &#x3D;&gt; {
+        if (fileReader.result !&#x3D; null){
+          let readableString : string &#x3D; fileReader.result.toString();
+          let postPreviewImage : HTMLImageElement &#x3D; &lt;HTMLImageElement&gt;document.getElementById(&quot;post-preview-image&quot;);
+          postPreviewImage.src &#x3D; readableString;
+        }
+      });
+    }
+  }
+
+  /**
+   * The function &#x60;onUploadButtonPressed&#x60; creates a new post object with user information and content, uploads the post to
+   * Firebase storage along with an optional image file, and displays a toast message indicating the upload status.
+   */
+  public onUploadButtonPressed(): void {
+    this.subscribition &#x3D; this.userService.currentUserProfile$.subscribe((user) &#x3D;&gt; {
+      const userID &#x3D; user?.uid;
+      const username &#x3D; user?.userName;
+
+      let post: Post &#x3D; {
+        postID: uuid(),
+        username: username,
+        userID: userID || &quot;&quot;,
+        contentText: this.contentText,
+        contentImage: &quot;&quot;,
+        postDate: Date.now(),
+        likes: [],
+        comments: [],
+      };
+      this.firebaseStorageService.createPost(post, this.selectedImageFile).pipe(
+         this.toast.observe({
+          loading: &#x27;Uploading...&#x27;,
+          success: &#x27;Post uploaded successfully&#x27;,
+          error: &#x27;Could not upload post&#x27;,
+        }
+        )).subscribe(() &#x3D;&gt; {
+          this.dashboard.openBody(&#x27;Dashboard&#x27;);
+        });
+      this.subscribition.unsubscribe();
+    });
+  }
+
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;card-container&quot;&gt;
+  &lt;div class&#x3D;&quot;card textfielf&quot;&gt;
+    &lt;textarea [(ngModel)]&#x3D;&quot;contentText&quot; placeholder&#x3D;&quot;Type Message...&quot; class&#x3D;&quot;textfield&quot;&gt;&lt;/textarea&gt;
+
+    &lt;div id&#x3D;&quot;post-preview&quot; *ngIf&#x3D;&quot;selectedImageFile&quot;&gt;
+      &lt;img id&#x3D;&quot;post-preview-image&quot; alt&#x3D;&quot;&quot; src&#x3D;&quot;&quot;/&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;post-card-footer&quot;&gt;
+    &lt;button mat-button color&#x3D;&quot;warn&quot;&gt;
+      &lt;label&gt;
+        &lt;input id&#x3D;&quot;photo-upload&quot; type&#x3D;&quot;file&quot; accept&#x3D;&quot;image/*&quot; #photoSelector (change)&#x3D;&quot;onPhotoSelected(photoSelector)&quot;/&gt;
+        &lt;i class&#x3D;&quot;glyphicon glyphicon-upload&quot;&gt;&lt;/i&gt;
+        Upload
+      &lt;/label&gt;
+    &lt;/button&gt;
+    &lt;button mat-flat-button color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;onUploadButtonPressed()&quot;&gt;Post&lt;/button&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./create-post.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">#photo-upload{
+  display: none;
+}
+
+textarea{
+  font-size: 1.5em;
+  padding: 0.5em;
+  height: 33%;
+  border-radius: 10px;
+}
+
+.textfield{
+  height: 33vh;
+  border-radius: 10px;
+}
+
+#post-preview{
+  z-index: 10;
+  position: absolute;
+  bottom: 0.5%;
+  right: 0.5%;
+}
+
+#post-preview-image{
+  object-fit: cover;
+  object-position: center;
+  width: 150px;
+  height: 100px;
+  border-radius: 1em;
+  border: 1px dashed gray;
+}
+
+.post-card-footer{
+  text-align: end;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="card-container">  <div class="card textfielf">    <textarea [(ngModel)]="contentText" placeholder="Type Message..." class="textfield"></textarea>    <div id="post-preview" *ngIf="selectedImageFile">      <img id="post-preview-image" alt="" src=""/>    </div>  </div>  <div class="post-card-footer">    <button mat-button color="warn">      <label>        <input id="photo-upload" type="file" accept="image/*" #photoSelector (change)="onPhotoSelected(photoSelector)"/>        <i class="glyphicon glyphicon-upload"></i>        Upload      </label>    </button>    <button mat-flat-button color="warn" (click)="onUploadButtonPressed()">Post</button>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CommentsComponent', 'selector': 'app-comments'},{'name': 'CreatePostComponent', 'selector': 'app-create-post'},{'name': 'DashboardComponent', 'selector': 'app-root'},{'name': 'ExternProfileComponent', 'selector': 'app-extern-profile'},{'name': 'FeedComponent', 'selector': 'app-feed'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FriendlistComponent', 'selector': 'app-friendlist'},{'name': 'LikeButtonComponent', 'selector': 'app-like-button'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LogoutComponent', 'selector': 'app-logout'},{'name': 'NotificationsFeedComponent', 'selector': 'app-notifications-feed'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SearchbarComponent', 'selector': 'app-searchbar'},{'name': 'SearchfeedComponent', 'selector': 'app-searchfeed'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'WriteCommentComponent', 'selector': 'app-write-comment'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CreatePostComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CreatePostComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

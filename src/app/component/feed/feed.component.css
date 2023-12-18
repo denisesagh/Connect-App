@@ -1,0 +1,12 @@
+.card img{
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-container{
+  padding-top: 2%;
+}
+
+.card-footer{
+  padding-bottom: 0;
+}

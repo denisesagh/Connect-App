@@ -1,0 +1,14 @@
+
+<p-dialog header="Neuer Kommentar"  [(visible)]="visible" [style]="{ width: '50vw', height: '42vh' }" (onHide)="closeDialog()">
+  <div class="card-container">
+    <div class="card textfield">
+      <textarea [(ngModel)]="commentText" placeholder="Type Comment..." class="textfield"></textarea>
+    </div>
+
+  </div>
+  <ng-template pTemplate="footer">
+    <div class="post-card-footer">
+      <button mat-flat-button color="warn" (click)="onUploadButtonPressed()">Post</button>
+    </div>
+  </ng-template>
+</p-dialog>

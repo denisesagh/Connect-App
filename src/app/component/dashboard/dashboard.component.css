@@ -1,0 +1,103 @@
+.header{
+  height: 6%;
+}
+
+.main{
+  height: 94%;
+}
+
+.main-body{
+  height: 120vh;
+  overflow: auto;
+  padding: 0 1em 1em;
+}
+
+.main-body img {
+  max-height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-container{
+  padding-bottom: 15px;
+}
+
+.navbar-body{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.navigation{
+  flex-direction: column;
+  height: 80%;
+  margin: 0 0 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-body p{
+  font-size: 2em;
+  margin: 0;
+  transition: 0.2s;
+  max-height: 10%;
+
+}
+
+.navbar-body p:hover{
+  color: #ddd;
+  cursor: pointer;
+}
+
+.footer{
+  margin: auto 10% 10%;
+}
+
+.post-button{
+  background-color: #1b71ef;
+  padding: 15px 20px;
+
+  border-radius: 5px;
+
+  font-size: 1.2rem;
+
+  box-shadow: none;
+  text-shadow: none;
+  transition: none;
+}
+
+.post-button:hover{
+  background-color: #023c8d;
+}
+
+
+.fixed-container {
+  position: sticky;
+}
+
+.scrollable-container {
+  height: calc(100% - 2rem); /* 2rem ist die Höhe des Headers */
+  overflow-y: auto;
+}
+
+.card-footer p{
+  text-align: center;
+  margin-bottom: 2px;
+}
+
+#postButton{
+
+  padding: 5px 60px;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: #000000;
+  color: white;
+  font-size: 1.4rem;
+  box-shadow: none;
+  text-shadow: none;
+  transition: none;
+
+}

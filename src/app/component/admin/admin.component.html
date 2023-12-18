@@ -1,0 +1,40 @@
+<div class="card shadow">
+  <div class="card-body">
+    <form [formGroup]="updateProfileForm" (ngSubmit)="updateProfile()">
+      <div class="mb-3">
+        <h2 id="updateProfileText" class="text-dark text-muted">Profil aktualisieren</h2>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">UID</label>
+        <input matInput placeholder="UID" class="form-control" formControlName="uid"/>
+        <mat-error *ngIf="uid?.errors?.['required']">
+          UID ist erforderlich
+        </mat-error>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Nutzername</label>
+        <input matInput placeholder="Nutzername" class="form-control" formControlName="username"/>
+        <mat-error *ngIf="username?.errors?.['required']">
+          Nutzername ist erforderlich
+        </mat-error>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Biografie</label>
+        <textarea matInput placeholder="Biografie" class="form-control" formControlName="bio"></textarea>
+        <mat-error *ngIf="bio?.errors?.['required']">
+          Biografie ist erforderlich
+        </mat-error>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Ganzen Namen</label>
+        <input matInput placeholder="Ganzen Namen" class="form-control" formControlName="fullName"/>
+        <mat-error *ngIf="fullName?.errors?.['required']">
+          Ganzen Namen ist erforderlich
+        </mat-error>
+      </div>
+      <div class="center margin-top">
+        <button type="submit" id="updateProfileButton" class="btn btn-info w-100" mat-raised-button color="primary">Profil aktualisieren</button>
+      </div>
+    </form>
+  </div>
+</div>

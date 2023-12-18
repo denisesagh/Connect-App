@@ -1,0 +1,14 @@
+<div class="card-container">
+  <div class="settings" *ngFor="let setting of settings">
+    <div class="settings-component">
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="{{setting.settingID}}" [checked]="setting.settingValue" (change)="onSwitchChanged(setting)">
+        <label class="form-check-label" for="{{setting.settingID}}">Benachrichtigungen erhalten</label>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="authSettings">
+  <button id="logoutButton" (click)="logout()">Logout</button>
+  <button id="deleteAccountButton" (click)="deleteUser()">Account löschen</button>
+</div>

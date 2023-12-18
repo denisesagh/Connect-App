@@ -1,0 +1,1096 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>connect-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">connect-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >NotificationService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/Services/notifications/notification.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#notificationSatusSubscription" >notificationSatusSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#notificationStatus" >notificationStatus</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createNotification" >createNotification</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#deleteAllNotifications" >deleteAllNotifications</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getAllNotificationsByUserID" >getAllNotificationsByUserID</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getUserNotificationSettings" >getUserNotificationSettings</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#saveNotification" >saveNotification</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(db: AngularFireDatabase, userService: <a href="../injectables/UsersService.html" target="_self">UsersService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/Services/notifications/notification.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>The constructor initializes the notificationSatusSubscription and notificationStatus variables.
+Firebase Realtime Database. It allows you to perform CRUD (Create, Read, Update, Delete) operations on the database.
+to interact with user-related data and perform operations such as fetching user information, updating user details,
+etc.</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>db</td>
+                                                  
+                                                        <td>
+                                                                    <code>AngularFireDatabase</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The &quot;db&quot; parameter is of type &quot;AngularFireDatabase&quot; and is used to interact with the
+Firebase Realtime Database. It allows you to perform CRUD (Create, Read, Update, Delete) operations on the database.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersService.html" target="_self" >UsersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The <code>userService</code> parameter is an instance of the <code>UsersService</code> class. It is used
+to interact with user-related data and perform operations such as fetching user information, updating user details,
+etc.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createNotification"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>createNotification</b></span>
+                        <a href="#createNotification"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createNotification(userID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, postID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, notificationID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, date: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, formattedDate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/app/Services/notifications/notification.service.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function creates a notification object with the given parameters.
+notification.
+notification is being created.
+a string or a number, depending on how you want to implement it.
+something like &quot;like&quot;, &quot;comment&quot;, &quot;follow&quot;, etc.
+obtained using the <code>Date.now()</code> method, which returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+format. It is used to display the date in a user-friendly way, such as &quot;January 1, 2022&quot; or &quot;01/01/2022&quot;.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The userID parameter is a string that represents the user ID of the recipient of the
+notification.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>postID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The postID parameter is a string that represents the ID of the post for which the
+notification is being created.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>notificationID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>notificationID</code> parameter is a unique identifier for the notification. It can be
+a string or a number, depending on how you want to implement it.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The &quot;type&quot; parameter is a string that represents the type of notification. It could be
+something like &quot;like&quot;, &quot;comment&quot;, &quot;follow&quot;, etc.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>date</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>date</code> parameter is a number representing the timestamp of the notification. It can be
+obtained using the <code>Date.now()</code> method, which returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>formattedDate</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>formattedDate</code> parameter is a string that represents the date in a specific
+format. It is used to display the date in a user-friendly way, such as &quot;January 1, 2022&quot; or &quot;01/01/2022&quot;.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Benachrichtigung.html" target="_self" >Benachrichtigung</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>a notification object with the properties userID, postID, notificationID, type, date, and formattedDate.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteAllNotifications"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>deleteAllNotifications</b></span>
+                        <a href="#deleteAllNotifications"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteAllNotifications(userID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/app/Services/notifications/notification.service.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function deletes all notifications for a given user ID from the database.
+you want to delete all notifications.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The userID parameter is a string that represents the unique identifier of the user for whom
+you want to delete all notifications.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable that will emit the result of deleting all notifications for a given userID.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllNotificationsByUserID"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getAllNotificationsByUserID</b></span>
+                        <a href="#getAllNotificationsByUserID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAllNotificationsByUserID(userID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/Services/notifications/notification.service.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function retrieves all notifications for a given user ID from a database and returns them as an observable array.
+to retrieve all notifications associated with that user from the database.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The userID parameter is a string that represents the unique identifier of a user. It is used
+to retrieve all notifications associated with that user from the database.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Benachrichtigung.html" target="_self" >Observable&lt;Benachrichtigung[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable of type <code>Benachrichtigung[]</code>.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserNotificationSettings"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getUserNotificationSettings</b></span>
+                        <a href="#getUserNotificationSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserNotificationSettings(userID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/Services/notifications/notification.service.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function retrieves the notification settings for a user and assigns the first setting value to the
+notificationStatus variable.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The userID parameter is a string that represents the unique identifier of a user.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/Services/notifications/notification.service.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The ngOnDestroy function unsubscribes from a notification status subscription.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveNotification"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>saveNotification</b></span>
+                        <a href="#saveNotification"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>saveNotification(notification: <a href="../interfaces/Benachrichtigung.html" target="_self">Benachrichtigung</a>, userID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/Services/notifications/notification.service.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function saves a notification object to the database if the user&#39;s notification settings are enabled, otherwise it
+returns null.
+contains the details of the notification to be saved. It has the following properties:
+user for whom the notification is being saved.
+is true. If the notification status is false, it returns an Observable of type <code>null</code>.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notification</td>
+                                    <td>
+                                                <code><a href="../interfaces/Benachrichtigung.html" target="_self" >Benachrichtigung</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>notification</code> parameter is an object of type <code>Benachrichtigung</code> which
+contains the details of the notification to be saved. It has the following properties:</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>userID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>userID</code> parameter is a string that represents the user&#39;s ID. It is used to identify the
+user for whom the notification is being saved.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable | Observable</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The function <code>saveNotification</code> returns an Observable of type <code>Benachrichtigung</code> if the notification status
+is true. If the notification status is false, it returns an Observable of type <code>null</code>.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="notificationSatusSubscription"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>notificationSatusSubscription</b></span>
+                        <a href="#notificationSatusSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/Services/notifications/notification.service.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="notificationStatus"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>notificationStatus</b></span>
+                        <a href="#notificationStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/Services/notifications/notification.service.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
+import {from, map, Observable, of, Subscriber, Subscription} from &quot;rxjs&quot;;
+import {Benachrichtigung} from &quot;../../Model/Benachrichtigung&quot;;
+import {AngularFireDatabase} from &quot;@angular/fire/compat/database&quot;;
+import {Database} from &quot;@angular/fire/database&quot;;
+import {getDatabase, onValue, ref} from &quot;firebase/database&quot;;
+import {UsersService} from &quot;../user/user.service&quot;;
+import {UserSettings} from &quot;../../Model/UserSettings&quot;;
+import {ProfileUser} from &quot;../../Model/User&quot;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class NotificationService {
+  private notificationStatus: boolean;
+  private notificationSatusSubscription: Subscription;
+
+
+  /**
+   * The constructor initializes the notificationSatusSubscription and notificationStatus variables.
+   * @param {AngularFireDatabase} db - The &quot;db&quot; parameter is of type &quot;AngularFireDatabase&quot; and is used to interact with the
+   * Firebase Realtime Database. It allows you to perform CRUD (Create, Read, Update, Delete) operations on the database.
+   * @param {UsersService} userService - The &#x60;userService&#x60; parameter is an instance of the &#x60;UsersService&#x60; class. It is used
+   * to interact with user-related data and perform operations such as fetching user information, updating user details,
+   * etc.
+   */
+  constructor(private db:AngularFireDatabase, private userService: UsersService) {
+    this.notificationSatusSubscription &#x3D; new Subscription();
+    this.notificationStatus &#x3D; true;
+
+  }
+
+  /**
+   * The ngOnDestroy function unsubscribes from a notification status subscription.
+   */
+  ngOnDestroy():void{
+    this.notificationSatusSubscription.unsubscribe();
+  }
+
+  /**
+   * The function retrieves the notification settings for a user and assigns the first setting value to the
+   * notificationStatus variable.
+   * @param {string} userID - The userID parameter is a string that represents the unique identifier of a user.
+   */
+  private getUserNotificationSettings(userID: string):void{
+    this.notificationSatusSubscription &#x3D; this.userService.getUserByID(userID).subscribe((user:ProfileUser | null):void &#x3D;&gt; {
+      if (user &amp;&amp; user.settings) {
+        const firstSetting:UserSettings &#x3D; user.settings[0];
+        this.notificationStatus &#x3D; firstSetting.settingValue;
+      }
+    });
+  }
+
+  /**
+   * The function saves a notification object to the database if the user&#x27;s notification settings are enabled, otherwise it
+   * returns null.
+   * @param {Benachrichtigung} notification - The &#x60;notification&#x60; parameter is an object of type &#x60;Benachrichtigung&#x60; which
+   * contains the details of the notification to be saved. It has the following properties:
+   * @param {string} userID - The &#x60;userID&#x60; parameter is a string that represents the user&#x27;s ID. It is used to identify the
+   * user for whom the notification is being saved.
+   * @returns The function &#x60;saveNotification&#x60; returns an Observable of type &#x60;Benachrichtigung&#x60; if the notification status
+   * is true. If the notification status is false, it returns an Observable of type &#x60;null&#x60;.
+   */
+  public saveNotification(notification: Benachrichtigung, userID:string): Observable&lt;Benachrichtigung&gt;|Observable&lt;null&gt; {
+    this.getUserNotificationSettings(userID);
+    if (!this.notificationStatus){
+      return of(null);
+    }
+    return from(this.db.object(&#x27;/notifications/&#x27;+notification.userID + &quot;/&quot; + notification.notificationID).set({
+      userID: notification.userID,
+      postID: notification.postID,
+      type: notification.type,
+      date: notification.date,
+      formattedDate: notification.formattedDate
+    })).pipe(
+      map(() &#x3D;&gt; notification)
+    );
+  }
+
+  /**
+   * The function creates a notification object with the given parameters.
+   * @param {string} userID - The userID parameter is a string that represents the user ID of the recipient of the
+   * notification.
+   * @param {string} postID - The postID parameter is a string that represents the ID of the post for which the
+   * notification is being created.
+   * @param {string} notificationID - The &#x60;notificationID&#x60; parameter is a unique identifier for the notification. It can be
+   * a string or a number, depending on how you want to implement it.
+   * @param {string} type - The &quot;type&quot; parameter is a string that represents the type of notification. It could be
+   * something like &quot;like&quot;, &quot;comment&quot;, &quot;follow&quot;, etc.
+   * @param {number} date - The &#x60;date&#x60; parameter is a number representing the timestamp of the notification. It can be
+   * obtained using the &#x60;Date.now()&#x60; method, which returns the number of milliseconds since January 1, 1970, 00:00:00 UTC.
+   * @param {string} formattedDate - The &#x60;formattedDate&#x60; parameter is a string that represents the date in a specific
+   * format. It is used to display the date in a user-friendly way, such as &quot;January 1, 2022&quot; or &quot;01/01/2022&quot;.
+   * @returns a notification object with the properties userID, postID, notificationID, type, date, and formattedDate.
+   */
+  public createNotification(userID:string, postID:string,notificationID:string, type: string, date:number, formattedDate:string): Benachrichtigung{
+    return {
+      userID: userID,
+      postID: postID,
+      notificationID: notificationID,
+      type: type,
+      date: date,
+      formattedDate:formattedDate
+    };
+  }
+
+  /**
+   * The function retrieves all notifications for a given user ID from a database and returns them as an observable array.
+   * @param {string} userID - The userID parameter is a string that represents the unique identifier of a user. It is used
+   * to retrieve all notifications associated with that user from the database.
+   * @returns an Observable of type &#x60;Benachrichtigung[]&#x60;.
+   */
+  public getAllNotificationsByUserID(userID: string): Observable&lt;Benachrichtigung[]&gt; {
+    const db: Database &#x3D; getDatabase();
+    const reference &#x3D; ref(db, &#x27;/notifications/&#x27; + userID);
+
+    return new Observable&lt;Benachrichtigung[]&gt;((observer:Subscriber&lt;Benachrichtigung[]&gt;):void &#x3D;&gt; {
+      onValue(reference, (snapshot):void &#x3D;&gt; {
+        const notifications: Benachrichtigung[] &#x3D; [];
+        snapshot.forEach((childSnapshot):void &#x3D;&gt; {
+          const data &#x3D; childSnapshot.val();
+          const notification: Benachrichtigung &#x3D; {
+            userID: data.userID,
+            postID: data.postID,
+            type: data.type,
+            date: data.date,
+            formattedDate: data.formattedDate,
+            notificationID: data.notificationID
+          };
+          notifications.push(notification);
+        });
+        notifications.sort((a:Benachrichtigung, b:Benachrichtigung) &#x3D;&gt; new Date(b.date).getTime() - new Date(a.date).getTime());
+        observer.next(notifications);
+      }, (error:Error):void &#x3D;&gt; {
+        observer.error(error);
+      });
+    });
+  }
+
+  /**
+   * The function deletes all notifications for a given user ID from the database.
+   * @param {string} userID - The userID parameter is a string that represents the unique identifier of the user for whom
+   * you want to delete all notifications.
+   * @returns an Observable that will emit the result of deleting all notifications for a given userID.
+   */
+  public deleteAllNotifications(userID: string): Observable&lt;any&gt; {
+    return from(this.db.list(&#x27;/notifications&#x27;, ref &#x3D;&gt;
+      ref.orderByChild(&#x27;userID&#x27;).equalTo(userID)
+    ).remove());
+  }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'NotificationService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

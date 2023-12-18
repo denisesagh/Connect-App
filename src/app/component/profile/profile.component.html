@@ -1,0 +1,68 @@
+<div
+  *ngIf="user$ | async as user" style="margin-bottom: 20px" class="profile-container">
+
+  <div class="profile-info">
+    <div class="profile-image">
+      <img
+        *ngIf="user.photoURL; else defaultImage"
+        [src]="user.photoURL"
+        alt="Profile picture">
+      <ng-template #defaultImage>
+        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Default profile picture">
+      </ng-template>
+      <button mat-mini-fab (click)="inputField.click()">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+
+    <div class="input-fields">
+      <input #inputField hidden type="file" accept="image/*" (change)="uploadFile($event, user)" />
+
+      <form class="margin-top" [formGroup]="profileForm">
+
+
+        <div class="row">
+          <div>
+
+            <input id="fullName"
+                   type="text"
+                   matInput
+                   formControlName="fullName"
+                   placeholder="Ganzer Name"
+            />
+
+          </div>
+
+          <div>
+            <input id="userName"
+                   type="text"
+                   matInput
+                   formControlName="userName"
+                   placeholder="Display Name"
+                   readonly
+                   style="pointer-events: none;"
+            />
+          </div>
+
+          <div class="bio-container">
+            <input id="bio"
+                   type="text"
+                   matInput
+                   formControlName="bio"
+                   placeholder="Bio"
+            />
+          </div>
+
+        </div>
+      </form>
+      <button  type="submit" id="submitProfileInfoButton" mat-raised-button [formGroup]="profileForm" (click)="saveProfile()">
+        Save
+      </button>
+    </div>
+  </div>
+
+  <hr>
+</div>
+
+
+<app-feed [loadMode]="'Profile'"></app-feed>

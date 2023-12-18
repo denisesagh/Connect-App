@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="card" *ngIf="post$ | async as post">
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+      <img [src]="post.contentImage" class="img-fluid" *ngIf="post.contentImage != ''"/>
+    </div>
+
+    <div class="card-body text-start">
+      <h5 class="card-title">{{post.username}}</h5>
+      <hr>
+      <p class="card-text">
+        {{post.contentText}}
+      </p>
+
+    </div>
+    <div class="card-footer d-flex flex-row justify-content-between fixed-container">
+      <div class="post-interact">
+        <app-like-button [postID]="post.postID" [buttonStatus] = "newPostHaveILiked">
+        </app-like-button>
+      </div>
+      <p class="footer-likes">{{post.likeCount}} likes</p>
+      <p class="footer-date">{{post.formattedPostDate}}</p>
+    </div>
+
+  </div>
+
+  <div class="comment-container">
+    <div class="comment" *ngIf="comments | async as comments">
+      <div class="card comment-card" *ngFor="let comment of comments">
+
+        <div class="card-body text-start">
+          <h5 class="card-title">{{comment.username}}</h5>
+          <hr>
+          <p class="card-text">
+            {{comment.commentText}}
+          </p>
+
+        </div>
+        <div class="card-footer d-flex flex-row justify-content-between fixed-container">
+          <p class="footer-date">{{comment.formatedPostDate}}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary rounded-circle fixed-button" (click)="showDialog()">
+    <i class="bi bi-plus"></i>
+  </button>
+
+  <app-write-comment
+    *ngIf="isWriteCommentActive"
+    (close)="closeDialog()">
+  </app-write-comment>
+</div>

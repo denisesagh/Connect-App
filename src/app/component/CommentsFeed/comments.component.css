@@ -1,0 +1,27 @@
+.comment{
+  width: 90%;
+  margin: 2% auto;
+}
+
+.comment-card{
+  margin-top: 1.5%;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.fixed-button {
+  position: fixed;
+  bottom: 1%;
+  right: 25%;
+  z-index: 1;
+}
+.card-footer{
+  padding-bottom: 0;
+}
+
+.card-footer p{
+  margin-left: auto;
+}

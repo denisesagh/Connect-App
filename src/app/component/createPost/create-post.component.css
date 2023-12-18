@@ -1,0 +1,38 @@
+#photo-upload{
+  display: none;
+}
+
+textarea{
+  font-size: 1.5em;
+  padding: 0.5em;
+  height: 33%;
+  border-radius: 10px;
+}
+
+.textfield{
+  height: 33vh;
+  border-radius: 10px;
+}
+
+#post-preview{
+  z-index: 10;
+  position: absolute;
+  bottom: 0.5%;
+  right: 0.5%;
+}
+
+#post-preview-image{
+  object-fit: cover;
+  object-position: center;
+  width: 150px;
+  height: 100px;
+  border-radius: 1em;
+  border: 1px dashed gray;
+}
+
+.post-card-footer{
+  text-align: end;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+

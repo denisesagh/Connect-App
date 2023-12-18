@@ -1,0 +1,36 @@
+<img src="./assets/logo.png" alt="Logo"  class="float-end img-fluid mt-2" style="margin-right: 15px; max-width: 200px; max-height: 150px">
+<div class="container-fluid" id="loginContainer">
+  <div class="row mt-5">
+
+    <div class="col"></div>
+    <div class="col-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <form>
+            <div class="mb-3">
+              <h2 id="loginText"  class="text-dark text-muted">Sign In</h2>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Email eingeben" name="email" [(ngModel)]="email">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" placeholder="Passwort eingeben" name="password" [(ngModel)]="password">
+            </div>
+            <button id="loginButton" class="btn btn-info w-100" type="button"  (click)="login()">Login</button>
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <a href="/forgot-password" class="text-dark" style="text-decoration: none;">Passwort vergessen?</a>
+              </div>
+              <div class="col-md-6 d-flex justify-content-end align-items-center">
+                <a href="/register" style="text-decoration: none;">Jetzt registrieren!</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>

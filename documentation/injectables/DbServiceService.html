@@ -1,0 +1,1710 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>connect-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">connect-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >DbServiceService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/Services/database/db-service.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#addLikesToPost" >addLikesToPost</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#checkIfUserAlreadyLiked" >checkIfUserAlreadyLiked</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#countLikes" >countLikes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#createPost" >createPost</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getAllPostsFromDB" >getAllPostsFromDB</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getAllPostsFromDBByUID" >getAllPostsFromDBByUID</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getCommentsForPost" >getCommentsForPost</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getPostByID" >getPostByID</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#removeLikeOfPost" >removeLikeOfPost</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#savePost" >savePost</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#uploadCommentToPost" >uploadCommentToPost</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#uploadImage" >uploadImage</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(storage: AngularFireStorage, db: AngularFireDatabase)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/Services/database/db-service.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>This is a constructor function that takes in AngularFireStorage and AngularFireDatabase as parameters.
+used for interacting with Firebase Storage. It provides methods for uploading, downloading, and managing files in the
+storage bucket.
+to interact with the Firebase Realtime Database. It provides methods for reading, writing, and querying data in the
+database.</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>storage</td>
+                                                  
+                                                        <td>
+                                                                    <code>AngularFireStorage</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The storage parameter is an instance of the AngularFireStorage service, which is
+used for interacting with Firebase Storage. It provides methods for uploading, downloading, and managing files in the
+storage bucket.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>db</td>
+                                                  
+                                                        <td>
+                                                                    <code>AngularFireDatabase</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The &quot;db&quot; parameter is an instance of the AngularFireDatabase service, which is used
+to interact with the Firebase Realtime Database. It provides methods for reading, writing, and querying data in the
+database.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addLikesToPost"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>addLikesToPost</b></span>
+                        <a href="#addLikesToPost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addLikesToPost(postID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, userID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="256"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:256</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function adds a like to a post in a database.
+the like is being added.
+liking the post.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>postID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The postID parameter is a string that represents the unique identifier of the post to which
+the like is being added.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>userID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>userID</code> parameter is a string that represents the unique identifier of the user who is
+liking the post.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>a Promise<void>.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkIfUserAlreadyLiked"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>checkIfUserAlreadyLiked</b></span>
+                        <a href="#checkIfUserAlreadyLiked"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkIfUserAlreadyLiked(postID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, userID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="297"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:297</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function checks if a user has already liked a specific post.
+used to check if the user has already liked a specific post.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>postID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The postID parameter is a string that represents the unique identifier of a post.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>userID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>userID</code> parameter is a string that represents the unique identifier of a user. It is
+used to check if the user has already liked a specific post.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable<boolean>.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="countLikes"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>countLikes</b></span>
+                        <a href="#countLikes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>countLikes(postID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="231"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:231</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function <code>countLikes</code> retrieves the number of likes for a given post ID from a database and returns it as an
+observable.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>postID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>postID</code> parameter is a string that represents the ID of a post.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;number&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The countLikes function returns an Observable<number>.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createPost"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>createPost</b></span>
+                        <a href="#createPost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createPost(post: <a href="../interfaces/Post.html" target="_self">Post</a>, selectedImageFile: File)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:83</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function creates a post with an optional image and saves it, or uploads the image and then saves the post.
+created. It may have properties such as <code>contentText</code> (the text content of the post) and <code>contentImage</code> (the URL of
+the image associated with the post).
+that the user has selected to be associated with the post.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>post</td>
+                                    <td>
+                                                <code><a href="../interfaces/Post.html" target="_self" >Post</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>post</code> parameter is an object of type <code>Post</code> which contains the details of the post to be
+created. It may have properties such as <code>contentText</code> (the text content of the post) and <code>contentImage</code> (the URL of
+the image associated with the post).</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>selectedImageFile</td>
+                                    <td>
+                                            <code>File</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>selectedImageFile</code> parameter is of type <code>File</code> and represents the image file
+that the user has selected to be associated with the post.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable of type <code>any</code>.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllPostsFromDB"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getAllPostsFromDB</b></span>
+                        <a href="#getAllPostsFromDB"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAllPostsFromDB()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="130"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:130</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function retrieves all posts from a database, sorts them by post date in descending order, and returns them as an
+observable.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Post.html" target="_self" >Observable&lt;Post[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable of type Post[].</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllPostsFromDBByUID"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getAllPostsFromDBByUID</b></span>
+                        <a href="#getAllPostsFromDBByUID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAllPostsFromDBByUID(uid: string[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="157"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:157</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function retrieves all posts from a database based on a given array of user IDs and returns them in descending
+order by post date.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>uid</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>uid</code> parameter is an array of strings representing user IDs.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Post.html" target="_self" >Observable&lt;Post[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable of type Post[].</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCommentsForPost"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getCommentsForPost</b></span>
+                        <a href="#getCommentsForPost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCommentsForPost(postID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="186"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:186</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function retrieves comments for a specific post from a database and returns them in descending order based on
+their post date.
+the comments associated with that post from the database.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>postID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>postID</code> parameter is a string that represents the ID of a post. It is used to retrieve
+the comments associated with that post from the database.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/CommentI.html" target="_self" >Observable&lt;CommentI[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable of type CommentI[], which represents an array of comments for a specific post.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPostByID"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getPostByID</b></span>
+                        <a href="#getPostByID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPostByID(postID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="109"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:109</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function retrieves a post from a database based on its ID and returns it as an Observable.
+database.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>postID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>postID</code> parameter is a string that represents the unique identifier of a post in the
+database.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Post.html" target="_self" >Observable&lt;Post&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable of type Post.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeLikeOfPost"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>removeLikeOfPost</b></span>
+                        <a href="#removeLikeOfPost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeLikeOfPost(postID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, userID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="274"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:274</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function <code>removeLikeOfPost</code> removes a like from a post in a database using the provided post ID and user ID.
+the like is being removed.
+like from a post.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>postID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The postID parameter is a string that represents the unique identifier of the post from which
+the like is being removed.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>userID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The userID parameter represents the unique identifier of the user who wants to remove their
+like from a post.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>a Promise<void>.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="savePost"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>savePost</b></span>
+                        <a href="#savePost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>savePost(post: <a href="../interfaces/Post.html" target="_self">Post</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The savePost function saves a post object to a database and returns an observable of the saved post.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>post</td>
+                                    <td>
+                                                <code><a href="../interfaces/Post.html" target="_self" >Post</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>post</code> parameter is an object of type <code>Post</code>. It contains the following properties:</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Post.html" target="_self" >Observable&lt;Post&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable of type Post.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uploadCommentToPost"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>uploadCommentToPost</b></span>
+                        <a href="#uploadCommentToPost"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>uploadCommentToPost(postID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, comment: <a href="../interfaces/CommentI.html" target="_self">CommentI</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="213"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:213</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function uploads a comment to a post in a database.
+be uploaded.
+you want to upload to a post.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>postID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The postID parameter is a string that represents the ID of the post to which the comment will
+be uploaded.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>comment</td>
+                                    <td>
+                                                <code><a href="../interfaces/CommentI.html" target="_self" >CommentI</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The &quot;comment&quot; parameter is an object of type &quot;CommentI&quot;. It represents the comment that
+you want to upload to a post.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>a Promise<void>.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uploadImage"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>uploadImage</b></span>
+                        <a href="#uploadImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>uploadImage(path: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, file: File)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/Services/database/db-service.service.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function <code>uploadImage</code> takes a file and uploads it to a specified path in Firebase Storage, returning an
+observable that emits the download URL of the uploaded image.
+stored in the Firebase Storage. It can be a path to a specific folder or a combination of folders and file name. For
+example, &quot;images/profile.jpg&quot; or &quot;photos/2021/summer/beach
+storage.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>path</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>path</code> parameter is a string that represents the location where the image file will be
+stored in the Firebase Storage. It can be a path to a specific folder or a combination of folders and file name. For
+example, &quot;images/profile.jpg&quot; or &quot;photos/2021/summer/beach</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>file</td>
+                                    <td>
+                                            <code>File</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The &quot;file&quot; parameter is of type &quot;File&quot; and represents the file that you want to upload to the
+storage.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;string&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable of type string.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import {AngularFireStorage, AngularFireStorageReference, AngularFireUploadTask} from &#x27;@angular/fire/compat/storage&#x27;;
+import {EMPTY, from, map, Observable, of, Subscriber, switchMap} from &#x27;rxjs&#x27;;
+import {Post} from &quot;../../Model/Post&quot;;
+import {AngularFireDatabase} from &quot;@angular/fire/compat/database&quot;;
+import { getDatabase, ref, onValue} from &quot;firebase/database&quot;;
+import {Database, push, remove} from &quot;@angular/fire/database&quot;;
+import {CommentI} from &quot;../../Model/Comment&quot;;
+import firebase from &quot;firebase/compat&quot;;
+import UploadTaskSnapshot &#x3D; firebase.storage.UploadTaskSnapshot;
+
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class DbServiceService {
+
+  /**
+   * This is a constructor function that takes in AngularFireStorage and AngularFireDatabase as parameters.
+   * @param {AngularFireStorage} storage - The storage parameter is an instance of the AngularFireStorage service, which is
+   * used for interacting with Firebase Storage. It provides methods for uploading, downloading, and managing files in the
+   * storage bucket.
+   * @param {AngularFireDatabase} db - The &quot;db&quot; parameter is an instance of the AngularFireDatabase service, which is used
+   * to interact with the Firebase Realtime Database. It provides methods for reading, writing, and querying data in the
+   * database.
+   */
+  constructor(private storage: AngularFireStorage, private db:AngularFireDatabase ) {
+
+  }
+
+  /**
+   * The function &#x60;uploadImage&#x60; takes a file and uploads it to a specified path in Firebase Storage, returning an
+   * observable that emits the download URL of the uploaded image.
+   * @param {string} path - The &#x60;path&#x60; parameter is a string that represents the location where the image file will be
+   * stored in the Firebase Storage. It can be a path to a specific folder or a combination of folders and file name. For
+   * example, &quot;images/profile.jpg&quot; or &quot;photos/2021/summer/beach
+   * @param {File} file - The &quot;file&quot; parameter is of type &quot;File&quot; and represents the file that you want to upload to the
+   * storage.
+   * @returns an Observable of type string.
+   */
+  private uploadImage(path: string, file: File): Observable&lt;string&gt; {
+    const ref:AngularFireStorageReference &#x3D; this.storage.ref(path);
+    const task : AngularFireUploadTask &#x3D; ref.put(file);
+
+    return from(task).pipe(
+      switchMap((snapshot:UploadTaskSnapshot):Observable&lt;any&gt; &#x3D;&gt; {
+        const downloadURL:Observable&lt;any&gt; &#x3D; ref.getDownloadURL();
+        return snapshot.state &#x3D;&#x3D;&#x3D; &#x27;success&#x27;
+          ? downloadURL
+          : EMPTY;
+      })
+    );
+  }
+
+  /**
+   * The savePost function saves a post object to a database and returns an observable of the saved post.
+   * @param {Post} post - The &#x60;post&#x60; parameter is an object of type &#x60;Post&#x60;. It contains the following properties:
+   * @returns an Observable of type Post.
+   */
+  public savePost(post: Post): Observable&lt;Post&gt; {
+    return from(this.db.object(&#x27;/post/&#x27;+post.postID).set({
+      username: post.username,
+      userID: post.userID,
+      contentImage: post.contentImage,
+      contentText: post.contentText,
+      postDate: post.postDate,
+      comments: post.comments,
+      likes: post.likes
+    })).pipe(
+      map(() &#x3D;&gt; post)
+    );
+  }
+
+  /**
+   * The function creates a post with an optional image and saves it, or uploads the image and then saves the post.
+   * @param {Post} post - The &#x60;post&#x60; parameter is an object of type &#x60;Post&#x60; which contains the details of the post to be
+   * created. It may have properties such as &#x60;contentText&#x60; (the text content of the post) and &#x60;contentImage&#x60; (the URL of
+   * the image associated with the post).
+   * @param {File} selectedImageFile - The &#x60;selectedImageFile&#x60; parameter is of type &#x60;File&#x60; and represents the image file
+   * that the user has selected to be associated with the post.
+   * @returns an Observable of type &#x60;any&#x60;.
+   */
+  public createPost(post: Post, selectedImageFile: File): Observable&lt;any&gt; {
+    if (selectedImageFile &#x3D;&#x3D; null &amp;&amp; post.contentText &#x3D;&#x3D; &quot;&quot;) {
+      return of(null);
+    }
+
+    if (selectedImageFile &#x3D;&#x3D; null &amp;&amp; post.contentText !&#x3D; null) {
+      return this.savePost(post).pipe(map((savedPost:Post) &#x3D;&gt; savedPost));
+    }
+    return this.uploadImage(&#x27;/postImages/&#x27; + selectedImageFile.name, selectedImageFile)
+      .pipe(
+        switchMap((downloadURL:string):Observable&lt;any&gt; &#x3D;&gt; {
+          if (downloadURL !&#x3D; null) {
+            post.contentImage &#x3D; downloadURL;
+            return this.savePost(post);
+          }
+          return of(null);
+        })
+      );
+  }
+
+  /**
+   * The function retrieves a post from a database based on its ID and returns it as an Observable.
+   * @param {string} postID - The &#x60;postID&#x60; parameter is a string that represents the unique identifier of a post in the
+   * database.
+   * @returns an Observable of type Post.
+   */
+  public getPostByID(postID: string): Observable&lt;Post&gt; {
+    const db: Database &#x3D; getDatabase();
+    const reference &#x3D; ref(db, &#x60;post/${postID}&#x60;);
+
+    return new Observable&lt;Post&gt;((observer:Subscriber&lt;Post&gt;):void &#x3D;&gt; {
+      onValue(reference, (snapshot):void &#x3D;&gt; {
+        const data: Post &#x3D; snapshot.val();
+        data.postID &#x3D; postID;
+        observer.next(data);
+      }, (error:Error):void &#x3D;&gt; {
+        observer.error(error);
+      });
+    });
+  }
+
+
+  /**
+   * The function retrieves all posts from a database, sorts them by post date in descending order, and returns them as an
+   * observable.
+   * @returns an Observable of type Post[].
+   */
+  public getAllPostsFromDB(): Observable&lt;Post[]&gt; {
+    const db: Database &#x3D; getDatabase();
+    const reference &#x3D; ref(db, &#x27;post&#x27;);
+
+    return new Observable&lt;Post[]&gt;((observer):void &#x3D;&gt; {
+      onValue(reference, (snapshot) &#x3D;&gt; {
+        const posts: Post[] &#x3D; [];
+        snapshot.forEach(childSnapshot &#x3D;&gt; {
+          const data: Post &#x3D; childSnapshot.val();
+          data.postID &#x3D; &lt;string&gt;childSnapshot.key;
+          posts.push(data);
+        });
+        posts.sort((a:Post, b:Post) &#x3D;&gt; new Date(b.postDate).getTime() - new Date(a.postDate).getTime());
+        observer.next(posts);
+      }, (error:Error):void &#x3D;&gt; {
+        observer.error(error);
+      });
+    });
+  }
+
+
+  /**
+   * The function retrieves all posts from a database based on a given array of user IDs and returns them in descending
+   * order by post date.
+   * @param {string[]} uid - The &#x60;uid&#x60; parameter is an array of strings representing user IDs.
+   * @returns an Observable of type Post[].
+   */
+  public getAllPostsFromDBByUID(uid: string[]): Observable&lt;Post[]&gt; {
+    const db: Database &#x3D; getDatabase();
+    const reference &#x3D; ref(db, &#x27;post&#x27;);
+    return new Observable&lt;Post[]&gt;((observer:Subscriber&lt;Post[]&gt;):void &#x3D;&gt; {
+      onValue(reference, (snapshot):void &#x3D;&gt; {
+        const posts: Post[] &#x3D; [];
+        snapshot.forEach((childSnapshot):void &#x3D;&gt; {
+          const data: Post &#x3D; childSnapshot.val();
+          data.postID &#x3D; &lt;string&gt;childSnapshot.key;
+
+          if(uid.includes(data.userID)){
+            posts.push(data);
+          }
+        });
+        posts.sort((a:Post, b:Post) &#x3D;&gt; new Date(b.postDate).getTime() - new Date(a.postDate).getTime());
+        observer.next(posts);
+      }, (error:Error):void &#x3D;&gt; {
+        observer.error(error);
+      });
+    });
+  }
+
+  /**
+   * The function retrieves comments for a specific post from a database and returns them in descending order based on
+   * their post date.
+   * @param {string} postID - The &#x60;postID&#x60; parameter is a string that represents the ID of a post. It is used to retrieve
+   * the comments associated with that post from the database.
+   * @returns an Observable of type CommentI[], which represents an array of comments for a specific post.
+   */
+  public getCommentsForPost(postID: string): Observable&lt;CommentI[]&gt; {
+    const db: Database &#x3D; getDatabase();
+    const reference &#x3D; ref(db, &#x60;post/${postID}/comments&#x60;);
+
+    return new Observable&lt;CommentI[]&gt;((observer:Subscriber&lt;CommentI[]&gt;):void &#x3D;&gt; {
+      onValue(reference, (snapshot):void &#x3D;&gt; {
+        const comments: CommentI[] &#x3D; [];
+        snapshot.forEach((childSnapshot):void &#x3D;&gt; {
+          const data &#x3D; childSnapshot.val();
+          comments.push(data);
+        });
+        comments.sort((a:CommentI, b:CommentI) &#x3D;&gt; new Date(b.postDate).getTime() - new Date(a.postDate).getTime());
+        observer.next(comments);
+      }, (error:Error):void &#x3D;&gt; {
+        observer.error(error);
+      });
+    });
+  }
+
+  /**
+   * The function uploads a comment to a post in a database.
+   * @param {string} postID - The postID parameter is a string that represents the ID of the post to which the comment will
+   * be uploaded.
+   * @param {CommentI} comment - The &quot;comment&quot; parameter is an object of type &quot;CommentI&quot;. It represents the comment that
+   * you want to upload to a post.
+   * @returns a Promise&lt;void&gt;.
+   */
+  public uploadCommentToPost(postID: string, comment: CommentI): Promise&lt;void&gt; {
+    const db: Database &#x3D; getDatabase();
+    const reference &#x3D; ref(db, &#x60;post/${postID}/comments&#x60;);
+
+    return push(reference, comment).then(():void &#x3D;&gt; {
+      console.log(&#x27;Comment added successfully!&#x27;);
+    }).catch((error:Error):void &#x3D;&gt; {
+      console.error(error);
+    });
+  }
+
+
+  /**
+   * The function &#x60;countLikes&#x60; retrieves the number of likes for a given post ID from a database and returns it as an
+   * observable.
+   * @param {string} postID - The &#x60;postID&#x60; parameter is a string that represents the ID of a post.
+   * @returns The countLikes function returns an Observable&lt;number&gt;.
+   */
+  public countLikes(postID: string): Observable&lt;number&gt; {
+    let likes: number &#x3D; 0;
+    const db: Database &#x3D; getDatabase();
+    const reference &#x3D; ref(db, &#x60;post/${postID}/likes&#x60;);
+
+    return new Observable&lt;number&gt;((observer:Subscriber&lt;number&gt;):void &#x3D;&gt; {
+      onValue(reference, (snapshot):void &#x3D;&gt; {
+        snapshot.forEach((childSnapshot):void &#x3D;&gt; {
+          likes++;
+        })
+        observer.next(likes);
+      }, (error:Error):void &#x3D;&gt; {
+        observer.error(error);
+      });
+    });
+  }
+
+  /**
+   * The function adds a like to a post in a database.
+   * @param {string} postID - The postID parameter is a string that represents the unique identifier of the post to which
+   * the like is being added.
+   * @param {string} userID - The &#x60;userID&#x60; parameter is a string that represents the unique identifier of the user who is
+   * liking the post.
+   * @returns a Promise&lt;void&gt;.
+   */
+  public addLikesToPost(postID: string, userID: string): Promise&lt;void&gt;{
+    const db: Database &#x3D; getDatabase();
+    const reference &#x3D; ref(db, &#x60;post/${postID}/likes/${userID}&#x60;);
+    return push(reference, new Date().toDateString()).then(():void &#x3D;&gt; {
+      console.log(&#x27;Like added successfully!&#x27;);
+    }).catch((error:Error):void &#x3D;&gt; {
+      console.error(error);
+    });
+  }
+
+  /**
+   * The function &#x60;removeLikeOfPost&#x60; removes a like from a post in a database using the provided post ID and user ID.
+   * @param {string} postID - The postID parameter is a string that represents the unique identifier of the post from which
+   * the like is being removed.
+   * @param {string} userID - The userID parameter represents the unique identifier of the user who wants to remove their
+   * like from a post.
+   * @returns a Promise&lt;void&gt;.
+   */
+  public removeLikeOfPost(postID: string, userID: string): Promise&lt;void&gt;{
+    console.log(&quot;PostID: &quot;+ postID);
+    console.log(&quot;UserID: &quot;+ userID);
+    console.log(&#x60;post/${postID}/likes/${userID}&#x60;)
+    const db: Database &#x3D; getDatabase();
+    const reference &#x3D; ref(db, &#x60;post/${postID}/likes/${userID}&#x60;);
+
+    return remove(reference).then(():void &#x3D;&gt; {
+      console.log(&#x27;Like removed successfully!&#x27;);
+    }).catch((error:Error):void &#x3D;&gt; {
+      console.error(error);
+    });
+  }
+
+
+
+  /**
+   * The function checks if a user has already liked a specific post.
+   * @param {string} postID - The postID parameter is a string that represents the unique identifier of a post.
+   * @param {string} userID - The &#x60;userID&#x60; parameter is a string that represents the unique identifier of a user. It is
+   * used to check if the user has already liked a specific post.
+   * @returns an Observable&lt;boolean&gt;.
+   */
+  public checkIfUserAlreadyLiked(postID: string, userID: string): Observable&lt;boolean&gt; {
+    const db: Database &#x3D; getDatabase();
+    const reference &#x3D; ref(db, &#x60;post/${postID}/likes/${userID}&#x60;);
+    return new Observable&lt;boolean&gt;((observer:Subscriber&lt;boolean&gt;):void &#x3D;&gt; {
+      onValue(reference, (snapshot):void &#x3D;&gt; {
+        if (snapshot.exists()) {
+          observer.next(true);
+        } else {
+          observer.next(false);
+        }
+      }, (error:Error):void &#x3D;&gt; {
+        observer.error(error);
+      });
+    });
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'DbServiceService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

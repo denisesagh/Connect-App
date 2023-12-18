@@ -1,0 +1,96 @@
+<!-----/*<img src="./assets/logo.png" alt="Logo"  class="float-end img-fluid mt-2" style="margin-right: 15px; max-width: 200px; max-height: 150px">
+<div class="container-fluid" id="registerContainer">
+  <div class="row mt-5">
+    <div class="col"></div>
+    <div class="col-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <form>
+            <div class="mb-3">
+              <h2 id="registerText" class="text-dark text muted">Register</h2>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Username</label>
+              <input type="text" placeholder="Usernamen eingeben" class="form-control" name="username" [(ngModel)]="username" >
+
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" placeholder="Email eingeben" class="form-control" name="email" [(ngModel)]="email" >
+
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" placeholder="Passwort eingeben" class="form-control" name="password" [(ngModel)]="password">
+            </div>
+
+            <button type="button" id="registerButton" class="btn btn-info w-100" (click)="register()" >Registrieren</button>
+            <div class="row mt-3">
+              <div class="col-md-6">
+                <a href="/login" style="text-decoration: none">Bereits registriert? Login</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+
+  </div>
+</div>--->
+<img src="./assets/logo.png" alt="Logo"  class="float-end img-fluid mt-2" style="margin-right: 15px; max-width: 200px; max-height: 150px">
+<div class="container-fluid" id="registerContainer">
+  <div class="row mt-5">
+  <div class="col-4"></div>
+    <div class="col-4">
+      <div class="card shadow">
+        <div class="card-body">
+          <form [formGroup]="signUpForm" (ngSubmit)="register()">
+            <div class="mb-3">
+              <h2 id="registerText" class="text-dark text muted">Register</h2>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Username</label>
+              <input matInput placeholder="Username" class="form-control" formControlName="name"/>
+              <mat-error *ngIf="name?.errors?.['required']">
+                Name is required
+              </mat-error>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email Adresse</label>
+              <input matInput placeholder="Email" class="form-control" formControlName="email" />
+              <mat-error *ngIf="email?.errors?.['required']">
+                Email address is required
+              </mat-error>
+              <mat-error *ngIf="email?.errors?.['email']">
+                Please enter a valid email address
+              </mat-error>
+            </div>
+            <label class="form-label">Passwort</label>
+            <div class="mb-3">
+              <input
+                matInput
+                type="password"
+                placeholder="Password"
+                formControlName="password"
+                class="form-control"
+              />
+              <mat-error *ngIf="password?.errors?.['required']">
+                Password is required
+              </mat-error>
+            </div>
+
+
+            <div class="center margin-top">
+              <button type="submit" id="registerButton" class="btn btn-info w-100" mat-raised-button color="primary">Registrieren</button>
+            </div>
+          </form>
+        </div>
+        <a href="/login" id="bereitsRegistriertText" style="text-decoration: none">Bereits registriert? Login</a>
+      </div>
+    </div>
+  </div>
+  </div>
+

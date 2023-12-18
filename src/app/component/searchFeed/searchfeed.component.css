@@ -1,0 +1,9 @@
+.friend{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.friend button{
+  margin-left: 2%;
+}

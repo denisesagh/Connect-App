@@ -1,0 +1,1022 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>connect-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">connect-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  SettingsComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/component/settings/settings.component.ts</code>
+</p>
+
+
+
+
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-settings</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./settings.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./settings.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#currentUserSettingsSubscription" >currentUserSettingsSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#currenUserSubscription" >currenUserSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#settings" >settings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#uid" >uid</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#deleteUser" >deleteUser</a>
+                            </li>
+                            <li>
+                                <a href="#logout" >logout</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onSwitchChanged" >onSwitchChanged</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(userService: <a href="../injectables/UsersService.html" target="_self">UsersService</a>, auth: <a href="../injectables/AuthService.html" target="_self">AuthService</a>, toast: HotToastService, router: Router, usersService: <a href="../injectables/UsersService.html" target="_self">UsersService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/component/settings/settings.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>This constructor initializes various services and subscriptions, and sets the uid property based on the current user&#39;s
+profile.
+responsible for handling user-related operations such as fetching user profiles and updating user information.
+authentication-related operations such as login, logout, and user registration.
+for displaying toast notifications in the application. Toast notifications are small pop-up messages that provide
+feedback or information to the user.
+between different routes in an Angular application. It provides methods like <code>navigate</code>, <code>navigateByUrl</code>, and
+<code>navigateByCommands</code> to navigate to different routes programmatically.
+responsible for handling user-related operations such as fetching user profiles and updating user settings.</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>userService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersService.html" target="_self" >UsersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The userService parameter is an instance of the UsersService class, which is
+responsible for handling user-related operations such as fetching user profiles and updating user information.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>auth</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The <code>auth</code> parameter is an instance of the <code>AuthService</code> class. It is used for
+authentication-related operations such as login, logout, and user registration.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>toast</td>
+                                                  
+                                                        <td>
+                                                                    <code>HotToastService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The <code>toast</code> parameter is an instance of the <code>HotToastService</code> class, which is used
+for displaying toast notifications in the application. Toast notifications are small pop-up messages that provide
+feedback or information to the user.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The <code>router</code> parameter is an instance of the <code>Router</code> class, which is used for navigating
+between different routes in an Angular application. It provides methods like <code>navigate</code>, <code>navigateByUrl</code>, and
+<code>navigateByCommands</code> to navigate to different routes programmatically.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>usersService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UsersService.html" target="_self" >UsersService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <ul>
+<li>The <code>usersService</code> parameter is an instance of the <code>UsersService</code> class, which is
+responsible for handling user-related operations such as fetching user profiles and updating user settings.</li>
+</ul>
+
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteUser"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>deleteUser</b></span>
+                        <a href="#deleteUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteUser()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/component/settings/settings.component.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The deleteUser function calls the deleteUser method from the auth object.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logout"></a>
+                    <span class="name">
+                        <span ><b>logout</b></span>
+                        <a href="#logout"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logout()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/component/settings/settings.component.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The <code>logout</code> function logs the user out, displays a toast message indicating the status of the logout process, and
+redirects the user to the login page.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/component/settings/settings.component.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The ngOnDestroy function is used to unsubscribe from subscriptions to prevent memory leaks.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/component/settings/settings.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The ngOnInit function subscribes to the currentUserSettings$ observable and assigns the received settings to the
+component&#39;s settings property.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSwitchChanged"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onSwitchChanged</b></span>
+                        <a href="#onSwitchChanged"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onSwitchChanged(changedSetting: <a href="../interfaces/UserSettings.html" target="_self">UserSettings</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/component/settings/settings.component.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function updates a user&#39;s setting value based on a changed setting and saves the updated settings to the database.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>changedSetting</td>
+                                    <td>
+                                                <code><a href="../interfaces/UserSettings.html" target="_self" >UserSettings</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The parameter &quot;changedSetting&quot; is of type &quot;UserSettings&quot;.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUserSettingsSubscription"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>currentUserSettingsSubscription</b></span>
+                        <a href="#currentUserSettingsSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/component/settings/settings.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currenUserSubscription"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>currenUserSubscription</b></span>
+                        <a href="#currenUserSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/component/settings/settings.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="settings"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>settings</b></span>
+                        <a href="#settings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/UserSettings.html" target="_self" >UserSettings[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/component/settings/settings.component.ts:15</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uid"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>uid</b></span>
+                        <a href="#uid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/component/settings/settings.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component} from &#x27;@angular/core&#x27;;
+import {UsersService} from &quot;../../Services/user/user.service&quot;;
+import {UserSettings} from &quot;../../Model/UserSettings&quot;;
+import {Subscription, tap} from &quot;rxjs&quot;;
+import {AuthService} from &quot;../../shared/auth.service&quot;;
+import {HotToastService} from &quot;@ngneat/hot-toast&quot;;
+import {Router} from &quot;@angular/router&quot;;
+
+@Component({
+  selector: &#x27;app-settings&#x27;,
+  templateUrl: &#x27;./settings.component.html&#x27;,
+  styleUrls: [&#x27;./settings.component.css&#x27;]
+})
+export class SettingsComponent {
+  public settings: UserSettings[];
+  private uid: string;
+  private currenUserSubscription: Subscription;
+  private currentUserSettingsSubscription: Subscription;
+
+  /**
+   * This constructor initializes various services and subscriptions, and sets the uid property based on the current user&#x27;s
+   * profile.
+   * @param {UsersService} userService - The userService parameter is an instance of the UsersService class, which is
+   * responsible for handling user-related operations such as fetching user profiles and updating user information.
+   * @param {AuthService} auth - The &#x60;auth&#x60; parameter is an instance of the &#x60;AuthService&#x60; class. It is used for
+   * authentication-related operations such as login, logout, and user registration.
+   * @param {HotToastService} toast - The &#x60;toast&#x60; parameter is an instance of the &#x60;HotToastService&#x60; class, which is used
+   * for displaying toast notifications in the application. Toast notifications are small pop-up messages that provide
+   * feedback or information to the user.
+   * @param {Router} router - The &#x60;router&#x60; parameter is an instance of the &#x60;Router&#x60; class, which is used for navigating
+   * between different routes in an Angular application. It provides methods like &#x60;navigate&#x60;, &#x60;navigateByUrl&#x60;, and
+   * &#x60;navigateByCommands&#x60; to navigate to different routes programmatically.
+   * @param {UsersService} usersService - The &#x60;usersService&#x60; parameter is an instance of the &#x60;UsersService&#x60; class, which is
+   * responsible for handling user-related operations such as fetching user profiles and updating user settings.
+   */
+  constructor(private userService: UsersService, private auth: AuthService,
+              private toast: HotToastService, private router: Router, private usersService: UsersService) {
+
+    this.currentUserSettingsSubscription &#x3D; new Subscription();
+    this.settings &#x3D; [];
+    this.uid &#x3D; &quot;&quot;;
+
+    this.currenUserSubscription&#x3D; this.usersService.currentUserProfile$
+      .pipe(tap(console.log))
+      .subscribe((user) &#x3D;&gt; {
+        this.uid &#x3D; user.uid;
+      });
+  }
+
+  /**
+   * The ngOnInit function subscribes to the currentUserSettings$ observable and assigns the received settings to the
+   * component&#x27;s settings property.
+   */
+  ngOnInit():void {
+    this.currentUserSettingsSubscription &#x3D; this.userService.currentUserSettings$.subscribe((settings: UserSettings[] | null):void &#x3D;&gt; {
+      if (settings &amp;&amp; settings.length &gt; 0) {
+        this.settings &#x3D; [];
+        console.log(&quot;Current settings:&quot; + this.settings);
+        settings.forEach((userSetting:UserSettings):void &#x3D;&gt; {
+          this.settings.push({settingID: userSetting.settingID, settingValue: userSetting.settingValue});
+        });
+      }
+    });
+  }
+
+
+  /**
+   * The function updates a user&#x27;s setting value based on a changed setting and saves the updated settings to the database.
+   * @param {UserSettings} changedSetting - The parameter &quot;changedSetting&quot; is of type &quot;UserSettings&quot;.
+   */
+  public onSwitchChanged(changedSetting: UserSettings): void {
+    //Such nach der Einstellung im Array und dreht den Zustand
+    const index: number &#x3D; this.settings.findIndex((s:UserSettings):boolean &#x3D;&gt; s.settingID &#x3D;&#x3D;&#x3D; changedSetting.settingID);
+    if (index !&#x3D; -1) {
+      this.settings[index].settingValue &#x3D; !this.settings[index].settingValue;
+    }
+
+    //Safe to DB
+    this.userService.updateUser({
+      uid: this.uid,
+      settings: this.settings
+    })
+    this.currenUserSubscription.unsubscribe();
+    this.currentUserSettingsSubscription.unsubscribe()
+
+}
+
+  /**
+   * The &#x60;logout&#x60; function logs the user out, displays a toast message indicating the status of the logout process, and
+   * redirects the user to the login page.
+   */
+  logout(): void {
+    this.auth.logout()
+      .pipe(
+        this.toast.observe({
+          success: &#x27;Logged out&#x27;,
+          loading: &#x27;Logging out...&#x27;,
+          error: ({message}):string &#x3D;&gt; &#x60;There was an error: ${message} &#x60;,
+        }),
+      ).subscribe(():void &#x3D;&gt; {
+      this.router.navigate([&#x27;/login&#x27;]).then(
+        ():void &#x3D;&gt; {
+          window.location.reload();
+        }
+      );
+    });
+  }
+
+  /**
+   * The deleteUser function calls the deleteUser method from the auth object.
+   */
+  public deleteUser(){
+    this.auth.deleteUser();
+  }
+
+  /**
+   * The ngOnDestroy function is used to unsubscribe from subscriptions to prevent memory leaks.
+   */
+  ngOnDestroy(): void {
+    this.currenUserSubscription.unsubscribe();
+    this.currentUserSettingsSubscription.unsubscribe()
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;card-container&quot;&gt;
+  &lt;div class&#x3D;&quot;settings&quot; *ngFor&#x3D;&quot;let setting of settings&quot;&gt;
+    &lt;div class&#x3D;&quot;settings-component&quot;&gt;
+      &lt;div class&#x3D;&quot;form-check form-switch&quot;&gt;
+        &lt;input class&#x3D;&quot;form-check-input&quot; type&#x3D;&quot;checkbox&quot; role&#x3D;&quot;switch&quot; id&#x3D;&quot;{{setting.settingID}}&quot; [checked]&#x3D;&quot;setting.settingValue&quot; (change)&#x3D;&quot;onSwitchChanged(setting)&quot;&gt;
+        &lt;label class&#x3D;&quot;form-check-label&quot; for&#x3D;&quot;{{setting.settingID}}&quot;&gt;Benachrichtigungen erhalten&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;authSettings&quot;&gt;
+  &lt;button id&#x3D;&quot;logoutButton&quot; (click)&#x3D;&quot;logout()&quot;&gt;Logout&lt;/button&gt;
+  &lt;button id&#x3D;&quot;deleteAccountButton&quot; (click)&#x3D;&quot;deleteUser()&quot;&gt;Account löschen&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./settings.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.settings{
+  margin-bottom: 20px;
+}
+
+
+.settings-component{
+  text-align: start;
+}
+
+#deleteAccountButton{
+  background-color: #e30a12;
+  padding: 5px 60px;
+  border-radius: 30px;
+
+  color:white;
+  font-size: 1.4rem;
+
+  box-shadow: none;
+  text-shadow: none;
+  transition: none;
+}
+
+#deleteAccountButton:hover{
+  margin-outside: 10rem;
+  background-color: #8d0202;
+}
+
+#logoutButton:hover{
+  margin-outside: 10rem;
+  background-color: #ffffff;
+  color: black;
+}
+
+#logoutButton {
+  padding: 5px 60px;
+
+  height: 100%;
+  border-radius: 30px;
+  background-color: #000000;
+  color: white;
+  font-size: 1.4rem;
+  box-shadow: none;
+  text-shadow: none;
+  transition: none;
+}
+
+.authSettings {
+  position: fixed;
+  bottom: 50%; /* 50% vom unteren Rand entfernt */
+  left: 50%; /* 50% vom linken Rand entfernt */
+  transform: translate(-50%, -50%); /* Zentriert das Element */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Abstand zwischen den Buttons */
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="card-container">  <div class="settings" *ngFor="let setting of settings">    <div class="settings-component">      <div class="form-check form-switch">        <input class="form-check-input" type="checkbox" role="switch" id="{{setting.settingID}}" [checked]="setting.settingValue" (change)="onSwitchChanged(setting)">        <label class="form-check-label" for="{{setting.settingID}}">Benachrichtigungen erhalten</label>      </div>    </div>  </div></div><div class="authSettings">  <button id="logoutButton" (click)="logout()">Logout</button>  <button id="deleteAccountButton" (click)="deleteUser()">Account löschen</button></div></div>'
+    var COMPONENTS = [{'name': 'AdminComponent', 'selector': 'app-admin'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CommentsComponent', 'selector': 'app-comments'},{'name': 'CreatePostComponent', 'selector': 'app-create-post'},{'name': 'DashboardComponent', 'selector': 'app-root'},{'name': 'ExternProfileComponent', 'selector': 'app-extern-profile'},{'name': 'FeedComponent', 'selector': 'app-feed'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FriendlistComponent', 'selector': 'app-friendlist'},{'name': 'LikeButtonComponent', 'selector': 'app-like-button'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LogoutComponent', 'selector': 'app-logout'},{'name': 'NotificationsFeedComponent', 'selector': 'app-notifications-feed'},{'name': 'ProfileComponent', 'selector': 'app-profile'},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'SearchbarComponent', 'selector': 'app-searchbar'},{'name': 'SearchfeedComponent', 'selector': 'app-searchfeed'},{'name': 'SettingsComponent', 'selector': 'app-settings'},{'name': 'WriteCommentComponent', 'selector': 'app-write-comment'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SettingsComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SettingsComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

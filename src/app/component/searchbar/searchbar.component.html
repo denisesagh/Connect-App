@@ -1,0 +1,9 @@
+<div class="searchbar mt-2">
+  <form (ngSubmit)="submitSearch(form.value)" #form="ngForm">
+    <input type="text" id="inputData" class="form-control" [(ngModel)]="inputData" name="inputData" placeholder="Suchen...">
+    <button class="search-btn btn btn-light" (click)="openSearchFeed()" type="submit">
+      <i class="bi bi-search"></i>
+    </button>
+  </form>
+</div>
+

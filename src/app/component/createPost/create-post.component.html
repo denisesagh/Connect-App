@@ -1,0 +1,21 @@
+<div class="card-container">
+  <div class="card textfielf">
+    <textarea [(ngModel)]="contentText" placeholder="Type Message..." class="textfield"></textarea>
+
+    <div id="post-preview" *ngIf="selectedImageFile">
+      <img id="post-preview-image" alt="" src=""/>
+    </div>
+  </div>
+
+  <div class="post-card-footer">
+    <button mat-button color="warn">
+      <label>
+        <input id="photo-upload" type="file" accept="image/*" #photoSelector (change)="onPhotoSelected(photoSelector)"/>
+        <i class="glyphicon glyphicon-upload"></i>
+        Upload
+      </label>
+    </button>
+    <button mat-flat-button color="warn" (click)="onUploadButtonPressed()">Post</button>
+  </div>
+
+</div>

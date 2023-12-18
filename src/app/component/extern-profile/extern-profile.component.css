@@ -1,0 +1,85 @@
+.profile-info {
+  display: flex;
+}
+
+.profile-image {
+  flex: 1;
+}
+
+.input-fields {
+  flex: 6;
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+.profile-image img {
+  border-radius: 50%;
+  border: 5px solid black;
+  width: 30vh;
+  height: 30vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+#fullName {
+
+  border: none;
+  font-size: 36px;
+  color: black;
+  display: inline;
+  font-family: inherit;
+  width: 100%;
+}
+
+
+#bio{
+  margin-top: 20px;
+  border: none;
+  display: inline;
+  font-family: inherit;
+  font-size: 20px;
+  width: 100%;
+}
+
+#userName {
+  margin-top: 20px;
+  border: none;
+  display: inline;
+  font-family: inherit;
+  font-size: 26px;
+  color: gray;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.row > input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+
+#submitProfileInfoButton{
+  margin-top: 10px;
+
+}
+
+.profile-image img:hover {
+  filter: brightness(80%);
+}
+
+.profile-image button {
+
+
+
+  z-index: 20000;
+}
+
+.profile-image:hover button {
+
+
+}

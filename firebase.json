@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "connect-app",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

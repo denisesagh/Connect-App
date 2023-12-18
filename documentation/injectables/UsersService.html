@@ -1,0 +1,1281 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>connect-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">connect-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >UsersService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/Services/user/user.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#addFriend" >addFriend</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#addUser" >addUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#amIFollowing" >amIFollowing</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkAdminStatus" >checkAdminStatus</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getUserByID" >getUserByID</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getUsers" >getUsers</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#removeFriend" >removeFriend</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateUser" >updateUser</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#currentUserProfile$" >currentUserProfile$</a>
+                                </li>
+                                <li>
+                                    <a href="#currentUserSettings$" >currentUserSettings$</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(firestore: Firestore, authService: <a href="../injectables/AuthService.html" target="_self">AuthService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/Services/user/user.service.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>firestore</td>
+                                                  
+                                                        <td>
+                                                                    <code>Firestore</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AuthService.html" target="_self" >AuthService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addFriend"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>addFriend</b></span>
+                        <a href="#addFriend"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addFriend(newFriend: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="139"
+                            class="link-to-prism">src/app/Services/user/user.service.ts:139</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The <code>addFriend</code> function adds a new friend to the current user&#39;s friend list and updates both the current user&#39;s and
+the new friend&#39;s profiles in the database.
+that you want to add.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newFriend</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>newFriend</code> parameter is a string that represents the UID (User ID) of the new friend
+that you want to add.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addUser"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>addUser</b></span>
+                        <a href="#addUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addUser(user: <a href="../interfaces/ProfileUser.html" target="_self">ProfileUser</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="80"
+                            class="link-to-prism">src/app/Services/user/user.service.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function adds a user to a Firestore collection and stores the user&#39;s UID in the session storage.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../interfaces/ProfileUser.html" target="_self" >ProfileUser</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The parameter <code>user</code> is of type <code>ProfileUser</code>.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable of type <code>void</code>.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="amIFollowing"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>amIFollowing</b></span>
+                        <a href="#amIFollowing"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>amIFollowing(follower: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, followed: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="208"
+                            class="link-to-prism">src/app/Services/user/user.service.ts:208</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function checks if a user is following another user based on the provided follower, followed, and type parameters.
+someone else.
+which field in the user document contains the followers.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>follower</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>follower</code> parameter is a string that represents the user who is potentially following
+someone else.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>followed</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The &quot;followed&quot; parameter is a string that represents the user being followed.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The &quot;type&quot; parameter is a string that represents the type of follower. It is used to specify
+which field in the user document contains the followers.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>a Promise that resolves to a boolean value.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkAdminStatus"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>checkAdminStatus</b></span>
+                        <a href="#checkAdminStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkAdminStatus()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="227"
+                            class="link-to-prism">src/app/Services/user/user.service.ts:227</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function <code>checkAdminStatus</code> retrieves the admin status of a user from a Firestore database and returns it as a
+boolean value.</p>
+</div>
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>The function <code>checkAdminStatus</code> returns a boolean value.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserByID"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getUserByID</b></span>
+                        <a href="#getUserByID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUserByID(userId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/Services/user/user.service.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function <code>getUserByID</code> retrieves a user profile from Firestore based on the provided user ID, returning an
+Observable that emits the profile user or null.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>userId</code> parameter is a string that represents the unique identifier of a user.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ProfileUser.html" target="_self" >Observable&lt;ProfileUser | null&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable of type <code>ProfileUser | null</code>.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUsers"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getUsers</b></span>
+                        <a href="#getUsers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getUsers(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="105"
+                            class="link-to-prism">src/app/Services/user/user.service.ts:105</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function <code>getUsers</code> retrieves a list of user profiles based on a given name, excluding the current user, and
+checks if the current user is following each user in the list.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>name</code> parameter is a string that represents the name of the user you are searching for.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ProfileUser.html" target="_self" >Promise&lt;ProfileUser[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an array of objects of type <code>ProfileUser</code>.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeFriend"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>removeFriend</b></span>
+                        <a href="#removeFriend"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeFriend(friendUID: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/app/Services/user/user.service.ts:175</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The <code>removeFriend</code> function removes a friend from the current user&#39;s friend list by updating both the current user&#39;s
+and the friend&#39;s user profiles.
+you want to remove.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>friendUID</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>friendUID</code> parameter is a string that represents the unique identifier of the friend
+you want to remove.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateUser"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>updateUser</b></span>
+                        <a href="#updateUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateUser(user: <a href="../interfaces/ProfileUser.html" target="_self">ProfileUser</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/app/Services/user/user.service.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>The function updates a user profile in a Firestore database.
+that needs to be updated.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                                <code><a href="../interfaces/ProfileUser.html" target="_self" >ProfileUser</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <ul>
+<li>The <code>user</code> parameter is an object of type <code>ProfileUser</code>. It represents the user profile
+that needs to be updated.</li>
+</ul>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>an Observable of type void.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-accessors">
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUserProfile$"></a>
+                        <span class="name"><b>currentUserProfile$</b><a href="#currentUserProfile$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>currentUserProfile$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/Services/user/user.service.ts:26</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>The function <code>currentUserProfile$</code> returns an Observable that emits the current user&#39;s profile information or null if
+there is no user logged in.</p>
+</div>
+
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="../interfaces/ProfileUser.html" target="_self" >Observable&lt;ProfileUser | null&gt;</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUserSettings$"></a>
+                        <span class="name"><b>currentUserSettings$</b><a href="#currentUserSettings$"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>currentUserSettings$()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/Services/user/user.service.ts:44</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>The function <code>currentUserSettings$</code> returns an observable that emits the current user&#39;s settings if available, or null
+if the user profile or settings are not present.</p>
+</div>
+
+                                <div>
+                                </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Injectable, Query} from &#x27;@angular/core&#x27;;
+import {
+  collection,
+  doc,
+  docData,
+  Firestore,
+  getDoc, getDocs, query,
+  setDoc,
+  updateDoc, where,
+} from &#x27;@angular/fire/firestore&#x27;;
+import { from,  Observable, of, switchMap} from &#x27;rxjs&#x27;;
+import { ProfileUser } from &#x27;src/app/Model/User&#x27;;
+import { AuthService } from &quot;src/app/shared/auth.service&quot;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class UsersService {
+  constructor(private firestore: Firestore, private authService: AuthService) {}
+
+  /**
+   * The function &#x60;currentUserProfile$&#x60; returns an Observable that emits the current user&#x27;s profile information or null if
+   * there is no user logged in.
+   * @returns The &#x60;currentUserProfile$&#x60; method returns an Observable that emits either a &#x60;ProfileUser&#x60; object or &#x60;null&#x60;.
+   */
+  get currentUserProfile$(): Observable&lt;ProfileUser | null&gt; {
+    return this.authService.currentUser$.pipe(
+      switchMap((user) &#x3D;&gt; {
+        if (!user?.uid) {
+          return of(null);
+        }
+        const ref &#x3D; doc(this.firestore, &#x27;users&#x27;, user?.uid);
+        sessionStorage.setItem(&quot;uid&quot;, user.uid);
+        return docData(ref) as Observable&lt;ProfileUser&gt;;
+      })
+    );
+  }
+
+  /**
+   * The function &#x60;currentUserSettings$&#x60; returns an observable that emits the current user&#x27;s settings if available, or null
+   * if the user profile or settings are not present.
+   * @returns The &#x60;currentUserSettings$&#x60; function returns an Observable that emits the current user&#x27;s settings.
+   */
+  get currentUserSettings$(){
+    return this.currentUserProfile$.pipe(
+      switchMap((profile:ProfileUser|null):Observable&lt;ProfileUser&gt; | Observable&lt;any&gt; &#x3D;&gt; {
+        if (!profile || !profile.settings) {
+          return of(null);
+        }
+
+        return of(profile.settings);
+      })
+    );
+  }
+
+  /**
+   * The function &#x60;getUserByID&#x60; retrieves a user profile from Firestore based on the provided user ID, returning an
+   * Observable that emits the profile user or null.
+   * @param {string} userId - The &#x60;userId&#x60; parameter is a string that represents the unique identifier of a user.
+   * @returns an Observable of type &#x60;ProfileUser | null&#x60;.
+   */
+  public getUserByID(userId: string): Observable&lt;ProfileUser | null&gt; {
+    return this.authService.currentUser$.pipe(
+      switchMap(():Observable&lt;any&gt; &#x3D;&gt; {
+        if (!userId) {
+          return of(null);
+        }
+        const ref &#x3D; doc(this.firestore, &#x27;users&#x27;, userId);
+        return docData(ref) as Observable&lt;ProfileUser&gt;;
+      })
+    );
+  }
+
+
+  /**
+   * The function adds a user to a Firestore collection and stores the user&#x27;s UID in the session storage.
+   * @param {ProfileUser} user - The parameter &#x60;user&#x60; is of type &#x60;ProfileUser&#x60;.
+   * @returns an Observable of type &#x60;void&#x60;.
+   */
+  public addUser(user: ProfileUser): Observable&lt;void&gt; {
+    const ref &#x3D; doc(this.firestore, &#x27;users&#x27;, user.uid);
+    sessionStorage.setItem(&quot;uid&quot;, user.uid);
+    return from(setDoc(ref, user));
+  }
+
+
+
+  /**
+   * The function updates a user profile in a Firestore database.
+   * @param {ProfileUser} user - The &#x60;user&#x60; parameter is an object of type &#x60;ProfileUser&#x60;. It represents the user profile
+   * that needs to be updated.
+   * @returns an Observable of type void.
+   */
+  public updateUser(user: ProfileUser): Observable&lt;void&gt; {
+    const ref &#x3D; doc(this.firestore, &#x27;users&#x27;, user.uid);
+    return from(updateDoc(ref, { ...user }));
+  }
+
+  /**
+   * The function &#x60;getUsers&#x60; retrieves a list of user profiles based on a given name, excluding the current user, and
+   * checks if the current user is following each user in the list.
+   * @param {String} name - The &#x60;name&#x60; parameter is a string that represents the name of the user you are searching for.
+   * @returns an array of objects of type &#x60;ProfileUser&#x60;.
+   */
+  public async getUsers(name: String): Promise&lt;ProfileUser[]&gt; {
+    const myUid:string &#x3D; sessionStorage.getItem(&quot;uid&quot;) || &#x27;&#x27;;
+    const returnDoc: ProfileUser[] &#x3D; [];
+
+    const usersDB &#x3D; collection(this.firestore, &quot;users&quot;);
+    const q &#x3D; query(usersDB, where(&quot;userName&quot;, &quot;!&#x3D;&quot;, &quot;&quot;));
+    const querySnapshot &#x3D; await getDocs(q);
+
+    for (const doc of querySnapshot.docs) {
+
+      const userName &#x3D; doc.get(&quot;userName&quot;);
+      const uid &#x3D; doc.get(&quot;uid&quot;);
+
+      if (userName.includes(name) &amp;&amp; uid !&#x3D; myUid) {
+
+        const thisUser: ProfileUser &#x3D; {
+          uid,
+          userName,
+          myFollower: doc.get(&quot;myFollower&quot;),
+          areWeFriends: await this.amIFollowing(uid, myUid, &quot;myFollower&quot;)
+        };
+
+        returnDoc.push(thisUser);
+      }
+    }
+    return returnDoc;
+  }
+
+  /**
+   * The &#x60;addFriend&#x60; function adds a new friend to the current user&#x27;s friend list and updates both the current user&#x27;s and
+   * the new friend&#x27;s profiles in the database.
+   * @param {string} newFriend - The &#x60;newFriend&#x60; parameter is a string that represents the UID (User ID) of the new friend
+   * that you want to add.
+   */
+  public async addFriend(newFriend: string): Promise&lt;void&gt; {
+    const myUid:string &#x3D; sessionStorage.getItem(&quot;uid&quot;) || &#x27;&#x27;;
+    const usersDB &#x3D; collection(this.firestore, &quot;users&quot;);
+
+    // Get the new friend&#x27;s profile from the database
+    const newFriendQuery &#x3D; query(usersDB, where(&quot;uid&quot;, &quot;&#x3D;&#x3D;&quot;, newFriend));
+    const newFriendSnapshot &#x3D; await getDocs(newFriendQuery);
+    const newFriendProfile:ProfileUser &#x3D; newFriendSnapshot.docs[0]?.data() as ProfileUser;
+
+    // Add the current user&#x27;s UID to the new friend&#x27;s myFollower array
+    if (newFriendProfile?.myFollower) {
+      newFriendProfile.myFollower &#x3D; [...newFriendProfile.myFollower, myUid];
+    } else {
+      newFriendProfile.myFollower &#x3D; [myUid];
+    }
+    this.updateUser(newFriendProfile);
+
+    // Add the new friend&#x27;s UID to the current user&#x27;s iAmFollowing array
+    const currentUserQuery &#x3D; query(usersDB, where(&quot;uid&quot;, &quot;&#x3D;&#x3D;&quot;, myUid));
+    const currentUserSnapshot &#x3D; await getDocs(currentUserQuery);
+    const currentUserProfile:ProfileUser &#x3D; currentUserSnapshot.docs[0]?.data() as ProfileUser;
+    if (currentUserProfile?.iAmFollowing) {
+      currentUserProfile.iAmFollowing &#x3D; [...currentUserProfile.iAmFollowing, newFriend];
+    } else {
+      currentUserProfile.iAmFollowing &#x3D; [newFriend];
+    }
+    this.updateUser(currentUserProfile);
+  }
+
+
+  /**
+   * The &#x60;removeFriend&#x60; function removes a friend from the current user&#x27;s friend list by updating both the current user&#x27;s
+   * and the friend&#x27;s user profiles.
+   * @param {string} friendUID - The &#x60;friendUID&#x60; parameter is a string that represents the unique identifier of the friend
+   * you want to remove.
+   */
+  public async removeFriend(friendUID: string): Promise&lt;void&gt; {
+    const myUid:string &#x3D; sessionStorage.getItem(&quot;uid&quot;) || &#x27;&#x27;;
+    const usersDB &#x3D; collection(this.firestore, &quot;users&quot;);
+
+    // Remove the current user&#x27;s UID from the friend&#x27;s myFollower array
+    const friendQuery &#x3D; query(usersDB, where(&quot;uid&quot;, &quot;&#x3D;&#x3D;&quot;, friendUID));
+    const friendSnapshot &#x3D; await getDocs(friendQuery);
+    const friendProfile:ProfileUser &#x3D; friendSnapshot.docs[0]?.data() as ProfileUser;
+    if (friendProfile?.myFollower) {
+      friendProfile.myFollower &#x3D; friendProfile.myFollower.filter(item &#x3D;&gt; item !&#x3D;&#x3D; myUid);
+      this.updateUser(friendProfile);
+    }
+
+    // Remove the friend&#x27;s UID from the current user&#x27;s iAmFollowing array
+    const currentUserQuery &#x3D; query(usersDB, where(&quot;uid&quot;, &quot;&#x3D;&#x3D;&quot;, myUid));
+    const currentUserSnapshot &#x3D; await getDocs(currentUserQuery);
+    const currentUserProfile:ProfileUser &#x3D; currentUserSnapshot.docs[0]?.data() as ProfileUser;
+    if (currentUserProfile?.iAmFollowing) {
+      currentUserProfile.iAmFollowing &#x3D; currentUserProfile.iAmFollowing.filter((item:string):boolean &#x3D;&gt; item !&#x3D;&#x3D; friendUID);
+      this.updateUser(currentUserProfile);
+    }
+  }
+
+
+  /**
+   * The function checks if a user is following another user based on the provided follower, followed, and type parameters.
+   * @param {string} follower - The &#x60;follower&#x60; parameter is a string that represents the user who is potentially following
+   * someone else.
+   * @param {string} followed - The &quot;followed&quot; parameter is a string that represents the user being followed.
+   * @param {string} type - The &quot;type&quot; parameter is a string that represents the type of follower. It is used to specify
+   * which field in the user document contains the followers.
+   * @returns a Promise that resolves to a boolean value.
+   */
+  public async amIFollowing(follower: string,followed: string,type: string): Promise&lt;boolean&gt;{
+    let returnType: boolean &#x3D; true;
+    const usersDB &#x3D; collection(this.firestore, &quot;users&quot;);
+    const q &#x3D; query(usersDB, where(&quot;uid&quot;, &quot;&#x3D;&#x3D;&quot;, follower));
+    const querySnapshot &#x3D; await getDocs(q);
+    querySnapshot.forEach((doc): void &#x3D;&gt; {
+      const myFollower &#x3D; doc.get(type) || [];
+      if (myFollower.includes(followed,0)){
+        returnType &#x3D; false;
+      }
+    });
+    return returnType;
+  }
+
+  /**
+   * The function &#x60;checkAdminStatus&#x60; retrieves the admin status of a user from a Firestore database and returns it as a
+   * boolean value.
+   * @returns The function &#x60;checkAdminStatus&#x60; returns a boolean value.
+   */
+  public async checkAdminStatus(): Promise&lt;boolean&gt;{
+    let myUid: string &#x3D; sessionStorage.getItem(&quot;uid&quot;) || &#x27;&#x27;;
+    let returnType: boolean &#x3D; false;
+    const usersDB &#x3D; collection(this.firestore, &quot;users&quot;);
+    const q &#x3D; query(usersDB, where(&quot;uid&quot;, &quot;&#x3D;&#x3D;&quot;, myUid));
+    const querySnapshot &#x3D; await getDocs(q);
+    querySnapshot.forEach((doc): void &#x3D;&gt; {
+      returnType &#x3D; doc.get(&quot;admin&quot;);
+      console.log(&quot;Admin: &quot;+doc.get(&quot;admin&quot;));
+    });
+    console.log(&quot;Admin Return: &quot;+returnType);
+    return returnType;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'UsersService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

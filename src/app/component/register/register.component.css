@@ -1,0 +1,21 @@
+#registerContainer{
+  align-items: center;
+  padding-top: 8%;
+  height: 100vh;
+}
+
+#registerText{
+  text-align: center;
+}
+
+#registerButton{
+  background-color: #1b71ef;
+  font-weight: bold;
+  color: white;
+}
+
+
+#bereitsRegistriertText{
+  text-align: center;
+
+}

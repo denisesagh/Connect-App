@@ -1,0 +1,13 @@
+<div class="card-container" >
+
+  <div class="friend" *ngFor="let user of searchedUsers">
+    <img [src]="user.photoURL" class="img-fluid" />
+    <div class="friend-details">
+      <h5 (click)="profilAufrufen(user.uid)">{{user.fullName}}</h5>
+      <p (click)="profilAufrufen(user.uid)">@{{user.userName}}</p>
+    </div>
+    <button *ngIf="user.areWeFriends" class="btn btn-light" (click)="addFollow(user.uid); user.areWeFriends=false">
+      <i class="bi bi-plus-square"></i>
+    </button>
+  </div>
+</div>

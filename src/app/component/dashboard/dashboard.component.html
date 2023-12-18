@@ -1,0 +1,88 @@
+
+
+<div class="container-fluid text-center h-100 d-flex flex-column"  >
+
+  <div class="row header mt-2 fixed-container">
+
+
+
+
+    <div class="col-3 navbar-header ">
+      <img src="./assets/logo.png" alt="Logo"  class="float-end img-fluid mt-2" style="margin-right: 99px; max-width: 200px; max-height: 150px">
+
+    </div>
+
+
+
+    <div class="col-6 main-header text-start">
+      <h3>{{title}}</h3>
+      <hr>
+    </div>
+
+    <div class="col-3 right-header">
+      <app-searchbar (search)="openBody('Suche')"></app-searchbar>
+    </div>
+
+  </div>
+
+  <div class="row main">
+
+    <div class="col-3 navbar-body fixed-container f-flex flex-column" >
+      <div class="row navigation">
+        <p (click)="openBody('Dashboard')">
+          <i class="bi bi-house-fill"></i>
+          <span class="link"> Startseite</span>
+        </p>
+        <p (click)="openBody('Profil')">
+          <i class="bi bi-person-square"></i>
+          <span class="link"> Mein Profil</span>
+        </p>
+        <p (click)="openBody('Benachrichtigungen')">
+          <i class="bi bi-envelope"></i>
+          <span class="link"> Benachrichtigungen</span>
+        </p>
+        <p (click)="openBody('Einstellungen')">
+          <i class="bi bi-gear-fill"></i>
+          <span class="link"> Einstellungen</span>
+        </p>
+        <p *ngIf="showAdminNav" (click)="openBody('Admin')">
+          <i class="bi bi-clipboard"></i>
+          <span class="link"> Admin</span>
+        </p>
+      </div>
+
+
+      <div class="row-3 footer">
+        <div class="row navbar-footer">
+          <button id="postButton" (click)="openBody('Post erstellen')">Posten</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-6 main-body scrollable-container">
+
+      <app-feed *ngIf="showFeed" ></app-feed>
+      <app-profile *ngIf="showProfile" ></app-profile>
+      <app-create-post *ngIf="showCreatePost" ></app-create-post>
+      <app-settings *ngIf="showSettings"></app-settings>
+      <app-searchfeed *ngIf="showSearch"></app-searchfeed>
+      <app-comments *ngIf="showComments"></app-comments>
+      <app-admin *ngIf="showAdmin"></app-admin>
+      <app-extern-profile *ngIf="showExternProfile"></app-extern-profile>
+      <app-notifications-feed *ngIf="showNotificationFeed"></app-notifications-feed>
+
+    </div>
+
+    <div class="col-3 right-body scrollable-container">
+      <app-friendlist></app-friendlist>
+    </div>
+
+
+  </div>
+
+
+</div>
+
