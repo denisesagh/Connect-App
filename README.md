@@ -36,4 +36,5 @@ Firebase
   - Simplified Registration Process: User registration process is simplified to data input only; no full registration process is necessary.
   - Centralized Data Storage: Data is centrally stored in a suitable database.
   - Flexibility in Data Storage Components: Data storage components should be implemented with flexibility, allowing for easy interchangeability of database technologies.
+
 and much more...
